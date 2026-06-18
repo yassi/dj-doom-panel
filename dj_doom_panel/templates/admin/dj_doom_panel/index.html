@@ -1,0 +1,41 @@
+{% extends "admin/dj_doom_panel/base.html" %}
+{% load i18n static %}
+
+{% block extrahead %}
+{{ block.super }}
+<link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css">
+{% endblock %}
+
+{% block panel_content %}
+
+<div class="dcr-page-header">
+  <div class="dcr-page-header__main">
+    <div class="dcr-page-header__icon dcr-icon-color--danger">
+      <img src="{% static 'dj_doom_panel/images/doomguy-face.png' %}" alt="DOOM">
+    </div>
+    <div class="dcr-page-header__body">
+      <div class="dcr-page-header__title-row">
+        <h1 class="dcr-page-header__title">{% trans "DOOM" %}</h1>
+      </div>
+      <p class="dcr-page-header__subtitle">{% trans "Mission-critical operations dashboard" %}</p>
+    </div>
+  </div>
+</div>
+
+<div class="doom-game-wrapper">
+  <div id="dos" class="doom-game-container" style="width:100%;height:calc(100vh - 220px);min-height:480px;"></div>
+</div>
+
+<script src="https://v8.js-dos.com/latest/js-dos.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    Dos(document.getElementById("dos"), {
+      url: "https://v8.js-dos.com/bundles/doom.jsdos",
+      kiosk: true,
+      noCloud: true,
+      renderAspect: "4/3",
+    });
+  });
+</script>
+
+{% endblock %}
