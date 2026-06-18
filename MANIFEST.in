@@ -1,0 +1,3 @@
+include README.md
+recursive-include dj_doom_panel/templates *
+recursive-include dj_doom_panel/static *

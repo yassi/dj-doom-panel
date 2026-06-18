@@ -1,0 +1,20 @@
+{% extends "dj_control_room_base/panel_base.html" %}
+{% load i18n static %}
+
+{% block panel_title %}{{ title|default:"DOOM" }}{% endblock %}
+
+{% block panel_branding %}
+<h1 id="site-name"><a href="{% url 'dj_doom_panel:index' %}">DOOM</a></h1>
+{% endblock %}
+
+{% block panel_breadcrumbs %}
+&rsaquo; {% trans "DOOM" %}
+{% endblock %}
+
+{% block panel_scripts %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'dj_doom_panel/css/styles.css' %}">
+{% endblock %}
+
+{% block panel_content %}
+{% endblock %}
