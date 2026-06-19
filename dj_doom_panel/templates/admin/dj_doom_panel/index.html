@@ -17,14 +17,20 @@
       <div class="dcr-page-header__title-row">
         <h1 class="dcr-page-header__title">{% trans "DOOM" %}</h1>
       </div>
-      <p class="dcr-page-header__subtitle">{% trans "Mission-critical operations dashboard" %}</p>
+      <p class="dcr-page-header__subtitle">{% trans "Play DOOM in your admin" %}</p>
     </div>
   </div>
 </div>
 
-<div class="doom-game-wrapper">
-  <div id="dos" class="doom-game-container" style="width:100%;height:calc(100vh - 220px);min-height:480px;"></div>
+<div class="dcr-card">
+  <div class="dcr-card__body dcr-card__body--flush">
+    <div id="dos"></div>
+  </div>
 </div>
+
+<p class="doom-attribution">
+  Powered by <a href="https://js-dos.com" target="_blank" rel="noopener">js-dos</a> &middot; DOOM is a trademark of id Software LLC
+</p>
 
 <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
 <script>

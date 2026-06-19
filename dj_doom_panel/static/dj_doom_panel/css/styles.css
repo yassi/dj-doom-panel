@@ -1,15 +1,21 @@
 /* ===== DOOM PANEL ===== */
 
-.doom-game-wrapper {
-    margin: 0 -40px -20px -40px; /* bleed past the admin content padding */
-    padding: 0;
+#content {
+    padding-bottom: 0 !important;
 }
 
-.doom-game-container {
+#footer {
+    display: none;
+}
+
+#dos {
     width: 100%;
-    height: calc(100vh - 220px);
+    height: calc(100vh - 260px);
     min-height: 480px;
-    display: block;
-    background: #000;
 }
 
+.doom-attribution {
+    margin-top: var(--dcr-space-sm);
+    font-size: var(--dcr-font-size-sm);
+    color: var(--dcr-color-text-muted);
+}

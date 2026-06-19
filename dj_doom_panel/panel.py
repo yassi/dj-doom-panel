@@ -9,8 +9,8 @@ from dj_control_room_base.core import PanelPlugin
 
 
 class DoomPanel(PanelPlugin):
-    name = "DOOM"
-    description = "Mission-critical operations dashboard"
+    name = "DOOM Panel"
+    description = "Play DOOM in your admin"
     icon = "dj_doom_panel/images/doomguy-face.png"
     icon_color = ""
 
