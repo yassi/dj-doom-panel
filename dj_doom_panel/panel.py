@@ -11,8 +11,8 @@ from dj_control_room_base.core import PanelPlugin
 class DoomPanel(PanelPlugin):
     name = "DOOM Panel"
     description = "Play DOOM in your admin"
-    icon = "dj_doom_panel/images/doomguy-face.png"
-    icon_color = ""
+    icon = "dj_doom_panel/images/target.svg"
+    icon_color = "danger"
 
     app_name = "dj_doom_panel"
     docs_url = "https://github.com/yassi/dj-doom-panel"
