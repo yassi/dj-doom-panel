@@ -1,4 +1,15 @@
-# dj-doom-panel
+[![Tests](https://github.com/yassi/dj-doom-panel/actions/workflows/test.yml/badge.svg)](https://github.com/yassi/dj-doom-panel/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/yassi/dj-doom-panel/branch/main/graph/badge.svg)](https://codecov.io/gh/yassi/dj-doom-panel)
+[![PyPI version](https://badge.fury.io/py/dj-doom-panel.svg)](https://badge.fury.io/py/dj-doom-panel)
+[![Python versions](https://img.shields.io/pypi/pyversions/dj-doom-panel.svg)](https://pypi.org/project/dj-doom-panel/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Downloads](https://img.shields.io/pypi/dm/dj-doom-panel.svg)](https://pypi.org/project/dj-doom-panel/)
+[![Django Control Room Panel](https://img.shields.io/badge/Django%20Control%20Room-Panel-0c4b33?logo=django)](https://github.com/yassi/dj-control-room)
+
+
+# Django Doom Panel
+
+![dj-doom-panel](https://raw.githubusercontent.com/yassi/dj-doom-panel/main/images/dj-doom-panel.png)
 
 **The Django admin panel that matters.**
 
@@ -11,7 +22,7 @@ Because the real question was never "does it scale?" — it was "can it run Doom
 ## Installation
 
 ```bash
-pip install dj-doom-panel
+pip install dj-doom-panel, dj-control-room
 ```
 
 Add to `INSTALLED_APPS`:
@@ -53,6 +64,8 @@ That's it. Open your admin. Click DOOM.
 ---
 
 ## How it works
+
+![DOOM gameplay in Django admin](https://raw.githubusercontent.com/yassi/dj-doom-panel/main/images/doom-gameplay.png)
 
 The panel embeds [js-dos v8](https://js-dos.com) — a DOSBox-powered DOS emulator that runs in the browser via WebAssembly. The game bundle is the original DOOM shareware release, which id Software made freely available in 1997.
 
