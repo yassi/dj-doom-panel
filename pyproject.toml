@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dj-doom-panel"
-version = "0.1.0"
-description = "The Django admin panel that matters"
+version = "0.1.1"
+description = "Play DOOM in your Django admin"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
