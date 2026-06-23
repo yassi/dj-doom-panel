@@ -51,7 +51,7 @@ class TestAdminIntegration(PanelTestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "js-dos.com")
-        self.assertContains(response, "doom.jsdos")
+        self.assertContains(response, "doom-shareware.jsdos")
 
     def test_unauthenticated_user_redirected_to_login(self):
         """Test that unauthenticated users are redirected to login."""
