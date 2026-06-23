@@ -25,3 +25,7 @@ The panel embeds [js-dos v8](https://js-dos.com), a DOSBox-powered DOS emulator 
 ## License
 
 MIT. See [LICENSE](https://github.com/yassi/dj-doom-panel/blob/main/LICENSE).
+
+---
+
+DOOM is a trademark of id Software LLC. dj-doom-panel is an unaffiliated fan project and is not endorsed by id Software, ZeniMax, or Bethesda.
