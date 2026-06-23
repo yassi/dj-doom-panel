@@ -37,14 +37,15 @@
 </div>
 
 <p class="doom-attribution">
-  Powered by <a href="https://js-dos.com" target="_blank" rel="noopener">js-dos</a> &middot; DOOM is a trademark of id Software LLC
+  Powered by <a href="https://js-dos.com" target="_blank" rel="noopener">js-dos</a> &middot;
+  DOOM shareware &copy; id Software LLC; freely distributable
 </p>
 
 <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     Dos(document.getElementById("dos"), {
-      url: "https://v8.js-dos.com/bundles/doom.jsdos",
+      url: "{% static 'dj_doom_panel/doom-shareware.jsdos' %}",
       kiosk: true,
       noCloud: true,
       renderAspect: "4/3",
